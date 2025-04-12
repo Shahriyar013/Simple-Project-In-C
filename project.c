@@ -31,8 +31,8 @@ fgets(studentname, sizeof(studentname), stdin);
 studentname[strcspn(studentname, "\n")] = 0;
 
 
-      for (int i = 1; i <= 6; i++) {
-        printf("Enter marks for subject %d: ", i );
+      for (int i = 0; i < 6; i++) {
+        printf("Enter marks for subject %d: ", i+1 );
         scanf("%d", &marks[i]);
 
         if (marks[i] < 40) {
